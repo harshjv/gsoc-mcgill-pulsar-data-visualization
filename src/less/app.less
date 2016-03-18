@@ -1,0 +1,41 @@
+#plot > svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+rect {
+	fill: transparent;
+	shape-rendering: crispEdges;
+}
+.axis {
+	path {
+		fill: none;
+		shape-rendering: crispEdges;
+		stroke: rgba(0, 0, 0, 0.1);
+	}
+	line {
+		fill: none;
+		shape-rendering: crispEdges;
+		stroke: rgba(0, 0, 0, 0.1);
+	}
+}
+.axisLine {
+	fill: none;
+	shape-rendering: crispEdges;
+	stroke-width: 2px;
+	stroke: rgba(0, 0, 0, 0.5);
+}
+.dot {
+	fill-opacity: .5;
+}
+.tooltip {
+	background: #eee;
+	border-radius: 4px;
+	border: 2px solid #aaa;
+	font: 12px sans-serif;
+	height: auto;
+	padding: 10px;
+	pointer-events: none;
+	position: absolute;
+	width: auto;
+}

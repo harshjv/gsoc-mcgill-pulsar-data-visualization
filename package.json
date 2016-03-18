@@ -1,0 +1,30 @@
+{
+  "name": "mcgill",
+  "private": true,
+  "version": "1.0.0",
+  "description": "McGill",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "DEBUG=mcgill* gulp",
+    "test": "standard"
+  },
+  "license": "BSD-2-Clause",
+  "browserify": {
+    "transform": [
+      "uglifyify"
+    ]
+  },
+  "dependencies": {
+    "d3": "^3.5.16"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "uglifyify": "^3.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
