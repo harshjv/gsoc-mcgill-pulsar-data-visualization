@@ -5,6 +5,7 @@
   "description": "McGill",
   "main": "index.js",
   "scripts": {
+    "setup": "npm install && bower install",
     "build": "gulp build",
     "dev": "DEBUG=mcgill* gulp",
     "test": "standard"
