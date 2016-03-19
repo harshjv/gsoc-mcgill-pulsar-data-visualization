@@ -1,18 +1,36 @@
 # [GSoC] McGill Space Institute: Pulsar's Data Visualization
 
+
+## Clone or download zip file
+
+```
+git clone https://github.com/harshjv/gsoc-mcgill-pulsar-data-visualization.git
+```
+
 ## Setup
 
 ```
 npm run setup
 ```
 
-## Build & Use
+## Build
 
 ```
 npm run build
-cd public
-python -m SimpleHTTPServer # python 2
-python -m http.server # python 3
+```
+
+## Run
+
+### Python 3
+
+```
+cd public && python -m http.server
+```
+
+### Python 2
+
+```
+cd public && python -m SimpleHTTPServer
 ```
 
 ## Libraries
@@ -24,3 +42,4 @@ python -m http.server # python 3
 - [x] Mouse hovering revealing data for each data point
 - [x] Plot zooming in and out with dynamic axis labelling
 - [ ] Additiona and/or removal of data by user, with automated plot scale adjustment
+- [ ] Use **Node.js** to serve static assets
