@@ -4,11 +4,14 @@
   "version": "1.0.0",
   "description": "McGill",
   "main": "index.js",
+  "engines": {
+    "node": "4.4.0"
+  },
   "scripts": {
-    "setup": "npm install && bower install",
     "build": "gulp build",
     "dev": "DEBUG=mcgill* gulp",
-    "test": "standard"
+    "test": "standard",
+    "postinstall": "bower install && gulp build"
   },
   "license": "BSD-2-Clause",
   "browserify": {
@@ -17,7 +20,8 @@
     ]
   },
   "dependencies": {
-    "d3": "^3.5.16"
+    "d3": "^3.5.16",
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
